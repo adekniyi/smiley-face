@@ -7,10 +7,6 @@
 </head>
 <body>
     <style>
-        /* .container{
-            display: block;
-            margin:0px auto;
-        } */
         .rectangle{
             position: absolute;
             top: 0;
@@ -18,10 +14,12 @@
             bottom: 0;
             left: 0;
             margin:auto;
-            /* padding-top:40px; */
             height: 300px;
             width: 400px;
             background-color: #FEEE9D;
+            animation-name: smiley;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
         .circle{
             position: absolute;
@@ -35,6 +33,16 @@
             background-color: #FBD671;
             border-radius: 50%;
             box-shadow:inset -10px -10px 0px #EFBB42;
+        }
+        @keyframes smiley {
+            50% {
+                background-color: rgb(224, 193, 106);
+            }
+        }
+        @keyframes smileyEye {
+            50% {
+                right: 10;
+            }
         }
         .circle:after{
             background-color: #20184E;
@@ -64,6 +72,9 @@
             height: 14px;
             top: 53px;
             left: 80px;
+            animation-name: smileyEye;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
         .eye2{
             background-color: #FBD671;
@@ -74,6 +85,9 @@
             top: 53px;
             left: 145px;
             z-index:1;
+            animation-name: smileyEye;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
         .mouth{
             position: absolute;
@@ -104,6 +118,14 @@
             top: 30px;
             margin-bottom: 10%;
             border-radius: 50%;
+            animation-name: smileyTong;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes smileyTong {
+            50% {
+                background-color: rgb(224, 41, 53);
+            }
         }
     </style>
     <div class="container">
