@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* .container{
+            display: block;
+            margin:0px auto;
+        } */
+        .rectangle{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin:auto;
+            /* padding-top:40px; */
+            height: 300px;
+            width: 400px;
+            background-color: #FEEE9D;
+        }
+        .circle{
+            position: absolute;
+            margin:auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 250px;
+            width: 250px;
+            background-color: #FBD671;
+            border-radius: 50%;
+            box-shadow:inset -10px -10px 0px #EFBB42;
+        }
+        .circle:after{
+            background-color: #20184E;
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 25px;
+            height: 45px;
+            top: 45px;
+            left: 140px;
+        }
+        .circle:before{
+            background-color: #20184E;
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 25px;
+            height: 45px;
+            top: 45px;
+            left: 75px;
+        }
+        .eye1{
+            background-color: #FBD671;
+            border-radius: 50%;
+            position: absolute;
+            width: 7px;
+            height: 14px;
+            top: 53px;
+            left: 80px;
+        }
+        .eye2{
+            background-color: #FBD671;
+            border-radius: 50%;
+            position: absolute;
+            width: 7px;
+            height: 14px;
+            top: 53px;
+            left: 145px;
+            z-index:1;
+        }
+        .mouth{
+            position: absolute;
+            margin:auto;
+            top: 1;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 65px;
+            margin-bottom: 10%;
+            margin-right: 60px;
+            width: 140px;
+            background-color:  #20184E;
+            overflow: hidden;
+            border-bottom: 5px solid #20184E;
+            border-bottom-left-radius: 100% 200%;
+            border-bottom-right-radius: 100% 200%;
+        }
+        .tongue{
+            background-color: #F15962;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 1;
+            right: 0;
+            bottom: 0;
+            left: 40px;
+            top: 30px;
+            margin-bottom: 10%;
+            border-radius: 50%;
+        }
+    </style>
+    <div class="container">
+        <div class="rectangle">
+            <div class="circle">
+                <div class="eye1"></div>
+                <div class="eye2"></div>
+                <div class="mouth">
+                    <div class="tongue"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
